@@ -1,0 +1,27 @@
+global:
+  scrape_interval: 15s
+
+rule_files:
+  - alert.rules.yml
+
+scrape_configs:
+  - job_name: 'prometheus'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['localhost:9090']
+  - job_name: 'node_exporter'
+    scrape_interval: 5s
+    static_configs:
+      - targets:
+        - 192.168.101.11:9100
+        - 192.168.101.12:9100
+        - 192.168.101.17:9100
+        - 192.168.101.13:9100
+        - 192.168.101.14:9100
+        - 192.168.101.15:9100
+        - 192.168.101.16:9100
+alerting:
+  alertmanagers:
+  - static_configs:
+    - targets:
+      - 'localhost:9093'

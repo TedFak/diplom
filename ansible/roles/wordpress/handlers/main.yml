@@ -1,0 +1,17 @@
+# roles/wordpress/handlers/prometheus.yml.j2
+---
+
+- name: restart wordpress
+  service:
+    name: wordpress
+    state: restarted
+
+- name: restart firewalld
+  service:
+    name: firewalld
+    state: restarted
+
+- name: restart httpd
+  service:
+    name: httpd
+    state: restarted

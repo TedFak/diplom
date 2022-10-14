@@ -1,0 +1,19 @@
+<LocationMatch "^/+$">
+    Options -Indexes
+    ErrorDocument 403 /.noindex.html
+</LocationMatch>
+
+<Directory /var/www/wordpress>
+    AllowOverride All
+    Require all granted
+</Directory>
+
+Alias /index.php /var/www/wordpress/index.php
+Alias /         /var/www/wordpress/
+
+<Directory {{ wordpress_directory }}/wp-content/plugins/akismet>
+  <FilesMatch "\.(php|txt)$">
+    Order Deny,Allow
+    Deny from all
+  </FilesMatch>
+</Directory>

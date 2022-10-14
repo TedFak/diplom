@@ -1,0 +1,6 @@
+---
+- name: Install Prometheus, Alert Manager and Grafana
+  hosts: monitoring
+  roles:
+  - role: monitoring
+    become: yes

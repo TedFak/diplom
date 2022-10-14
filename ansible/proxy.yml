@@ -1,0 +1,6 @@
+---
+- name: Install nginx and le
+  hosts: proxy
+  roles:
+   - role: nginxle
+     become: yes

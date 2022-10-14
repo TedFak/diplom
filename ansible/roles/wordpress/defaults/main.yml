@@ -1,0 +1,32 @@
+# roles/wordpress/defaults/prometheus.yml.j2
+---
+
+wordpress_database_host: 192.168.101.12
+wordpress_database: wordpress
+wordpress_user: wordpress
+wordpress_password: wordpress
+
+wordpress_plugins: []
+wordpress_themes: []
+
+wordpress_force_ssl: false
+wordpress_allow_file_mods: true
+wordpress_automatic_updates: true
+wordpress_debug: false
+
+httpd_access_log: logs/access_log
+httpd_access_log_ssl: logs/ssl_access_log
+httpd_document_root: '/var/www/wordpress'
+httpd_error_log: logs/error_log
+httpd_error_log_ssl: logs/ssl_error_log
+httpd_extended_status: 'On'
+httpd_listen: 80
+httpd_listen_ssl: 443
+httpd_log_level: warn
+httpd_log_level_ssl: warn
+httpd_server_admin: root@app.svgsmsc.com
+httpd_server_root: '/etc/httpd'
+httpd_server_tokens: Prod
+httpd_status_enable: false
+httpd_status_location: '/server-status'
+httpd_status_require: 'host www.svgsmsc.com'

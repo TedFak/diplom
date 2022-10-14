@@ -1,0 +1,22 @@
+- name: Install grafana
+  yum:
+    name: https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-{{ version_grafana }}-1.x86_64.rpm
+    state: latest
+
+- name: "Grafana configuration file copy"
+  template:
+    src: "grafana.conf.j2"
+    dest: /etc/grafana/grafana.ini
+  notify: event_restart_grafana
+
+- name: "Grafana server started"
+  service:
+    name: grafana-server
+    enabled: true
+    state: started
+
+- name: "Check if Grafana is accessible."
+  uri:
+    url: http://monitoring.svgsmsc.com:3000
+    method: GET
+    status_code: 200

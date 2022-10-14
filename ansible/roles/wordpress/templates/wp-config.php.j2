@@ -1,0 +1,41 @@
+<?php
+
+define('DB_NAME', '{{ wordpress_database }}');
+
+define('DB_USER', '{{ wordpress_user }}');
+
+define('DB_PASSWORD', '{{ wordpress_password }}');
+
+define('DB_HOST', '{{ wordpress_database_host }}');
+
+define('DB_CHARSET', 'utf8');
+
+define('DB_COLLATE', '');
+
+define('FORCE_SSL_ADMIN', true);
+
+if($_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https'){
+
+    $_SERVER['HTTPS'] = 'on';
+    $_SERVER['SERVER_PORT'] = 443;
+}
+
+define('WP_HOME','https://www.svgsmsc.com/');
+define('WP_SITEURL','https://www.svgsmsc.com/');
+
+include ( ABSPATH . 'wp-salts.php' );
+
+$table_prefix  = 'wp_';
+
+define('DISALLOW_FILE_MODS', {{ not wordpress_allow_file_mods }});
+
+define('AUTOMATIC_UPDATER_DISABLED', {{ not wordpress_automatic_updates }});
+
+define('WP_DEBUG', {{ wordpress_debug }});
+
+if ( !defined('ABSPATH') )
+  define('ABSPATH', '{{ wordpress_directory }}');
+
+require_once(ABSPATH . 'wp-settings.php');
+
+// vim: ft=php

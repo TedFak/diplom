@@ -1,0 +1,10 @@
+---
+version_alertmanager: "0.24.0"
+
+serviceName: "prometheus"
+userId: "prometheus"
+groupId: "prometheus"
+exec_command: "/usr/local/bin/prometheus --config.file=/etc/prometheus/prometheus.conf --storage.tsdb.path=/data/prometheus --storage.tsdb.retention=2d"
+version: "2.36.2"
+
+version_grafana: 5.4.3

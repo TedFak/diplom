@@ -1,0 +1,6 @@
+---
+- name: Install wordpress
+  hosts: app
+  roles:
+  - role: wordpress
+    become: yes
