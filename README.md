@@ -9,7 +9,7 @@
           * [Установка WordPress](https://github.com/TedFak/diplom#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-wordpress)
           * [Установка Gitlab CE, Gitlab Runner и настройка CI/CD](https://github.com/TedFak/diplom#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-gitlab-ce-%D0%B8-gitlab-runner)
           * [Установка Prometheus, Alert Manager, Node Exporter и Grafana](https://github.com/TedFak/diplom#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-prometheus-alert-manager-node-exporter-%D0%B8-grafana)
-          * [Доп. материал](https://github.com/TedFak/diplom#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-prometheus-alert-manager-node-exporter-%D0%B8-grafana)
+          * [Доп. материал](https://github.com/TedFak/diplom#%D0%B4%D0%BE%D0%BF-%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB)
           
 ### Регистрация доменного имени
 Куплен домен у регистратора domains.google.com , в нем прописаны все А записи, так же в Cloud DNS в Yandex изменены записи NS на Google днс сервера.
