@@ -229,3 +229,14 @@ alerting:
       - 'localhost:9093'
 ```
 ___
+
+
+
+![image](https://user-images.githubusercontent.com/95320903/196021556-b4fe3915-c741-4287-8b61-9e744be41284.png)
+
+![image](https://user-images.githubusercontent.com/95320903/196021560-9d2d10bc-9d3e-4fb9-b30a-e4c64dbdf5b5.png)
+
+![image](https://user-images.githubusercontent.com/95320903/196021574-16d30898-93bc-46d4-bf13-f0080456fd23.png)
+
+![image](https://user-images.githubusercontent.com/95320903/196021565-84c9e189-e83d-46a8-b068-95f0a7e0b49c.png)
+
