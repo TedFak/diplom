@@ -9,6 +9,7 @@
           * [Установка WordPress](https://github.com/TedFak/diplom#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-wordpress)
           * [Установка Gitlab CE, Gitlab Runner и настройка CI/CD](https://github.com/TedFak/diplom#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-gitlab-ce-%D0%B8-gitlab-runner)
           * [Установка Prometheus, Alert Manager, Node Exporter и Grafana](https://github.com/TedFak/diplom#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-prometheus-alert-manager-node-exporter-%D0%B8-grafana)
+          * [Доп. материал](https://github.com/TedFak/diplom#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-prometheus-alert-manager-node-exporter-%D0%B8-grafana)
           
 ### Регистрация доменного имени
 Куплен домен у регистратора domains.google.com , в нем прописаны все А записи, так же в Cloud DNS в Yandex изменены записи NS на Google днс сервера.
@@ -229,7 +230,7 @@ alerting:
       - 'localhost:9093'
 ```
 ___
-
+### Доп. материал
 
 
 ![image](https://user-images.githubusercontent.com/95320903/196021556-b4fe3915-c741-4287-8b61-9e744be41284.png)
